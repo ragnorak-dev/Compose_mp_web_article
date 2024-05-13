@@ -22,11 +22,9 @@ import com.ragnorak.cmparticle.strings.Resources.strings
 import com.ragnorak.cmparticle.ui.component.LanguageComponent
 import composempwebarticle.composeapp.generated.resources.Res
 import composempwebarticle.composeapp.generated.resources.ragnorak_background_juntos_2_colores
-import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
 
 
-@OptIn(ExperimentalResourceApi::class)
 @Composable
 fun Content(appState: RanorakAppState) {
 

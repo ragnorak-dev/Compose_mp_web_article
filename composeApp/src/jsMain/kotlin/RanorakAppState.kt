@@ -7,7 +7,7 @@ import androidx.compose.runtime.Stable
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import com.ragnorak.cmparticle.navigation.NavigationStack
-import com.ragnorak.cmparticle.ui.DestinationMenu
+import com.ragnorak.cmparticle.ui.Destinations
 import kotlinx.coroutines.CoroutineScope
 
 @Stable
@@ -17,7 +17,7 @@ actual class RanorakAppState(
     actual val coroutineScope: CoroutineScope,
 ) {
 
-    private val navigationStack = NavigationStack(DestinationMenu.START.route)
+    private val navigationStack = NavigationStack(Destinations.START.route)
 
     actual val currentRoute: String?
         get() = navigationStack.lastWithIndex().value

@@ -15,4 +15,4 @@ actual val windowSize: IntSize
     @Composable
     get() = LocalWindowInfo.current.containerSize
 
-actual var density: MutableState<Density> = mutableStateOf(LocalDensity.current)
+actual var density: MutableState<Density> = mutableStateOf( Density(density = 1f))
